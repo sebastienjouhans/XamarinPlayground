@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluffy.ViewModels", "Fluffy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluffy.Common", "Fluffy\Fluffy.Common\Fluffy.Common.csproj", "{84E6F609-555B-4379-A9C0-03BCBE5D8540}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluffy.Services", "Fluffy\Fluffy.Services\Fluffy.Services.csproj", "{A671A623-79BB-4735-A103-44FE26376EBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,26 @@ Global
 		{84E6F609-555B-4379-A9C0-03BCBE5D8540}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{84E6F609-555B-4379-A9C0-03BCBE5D8540}.Release|x86.ActiveCfg = Release|Any CPU
 		{84E6F609-555B-4379-A9C0-03BCBE5D8540}.Release|x86.Build.0 = Release|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Debug|ARM.Build.0 = Debug|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Debug|x86.Build.0 = Debug|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Release|ARM.Build.0 = Release|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Release|iPhone.Build.0 = Release|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Release|x86.ActiveCfg = Release|Any CPU
+		{A671A623-79BB-4735-A103-44FE26376EBA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

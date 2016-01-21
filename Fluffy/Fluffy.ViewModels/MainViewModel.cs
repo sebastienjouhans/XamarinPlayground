@@ -3,6 +3,7 @@
     using System.Windows.Input;
     using Cirrious.MvvmCross.ViewModels;
     using Common;
+    using Common.Args;
 
     public class MainViewModel : MvxViewModel
     {

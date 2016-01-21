@@ -3,6 +3,8 @@
     using Cirrious.CrossCore;
     using Cirrious.CrossCore.IoC;
     using Cirrious.MvvmCross.ViewModels;
+    using Common.Interfaces;
+    using Services.Serializers;
     using ViewModels;
 
     public class App : MvxApplication
@@ -12,16 +14,14 @@
             base.Initialize();
 
             this.InitialiseServices();
-            this.InitialiseViewModels();
+
+            Mvx.RegisterSingleton(new CustomAppStart());
         }
 
         private void InitialiseServices()
         {
-        }
-
-        private void InitialiseViewModels()
-        {
-            Mvx.RegisterSingleton(new CustomAppStart());
+            Mvx.RegisterType<IJsonSerializer, JsonSerializer>();
+            Mvx.RegisterType<ICommunicationService, IFluffyCommunicationService>();
         }
 
     }

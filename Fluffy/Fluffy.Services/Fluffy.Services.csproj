@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{84E6F609-555B-4379-A9C0-03BCBE5D8540}</ProjectGuid>
+    <ProjectGuid>{A671A623-79BB-4735-A103-44FE26376EBA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Fluffy.Common</RootNamespace>
-    <AssemblyName>Fluffy.Common</AssemblyName>
+    <RootNamespace>Fluffy.Services</RootNamespace>
+    <AssemblyName>Fluffy.Services</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,28 +35,28 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\Fluffy.Common\Fluffy.Common.csproj">
+      <Project>{84e6f609-555b-4379-a9c0-03bcbe5d8540}</Project>
+      <Name>Fluffy.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActivityReportingServiceStatusChangedEventArgs.cs" />
-    <Compile Include="Extensions\CollectionExtensions.cs" />
-    <Compile Include="Extensions\NumberExtensions.cs" />
-    <Compile Include="Extensions\StringExtensions.cs" />
-    <Compile Include="Extensions\TaskExtensions.cs" />
-    <Compile Include="Interfaces\IActivityReportingService.cs" />
-    <Compile Include="Interfaces\ICommunicationService.cs" />
-    <Compile Include="Interfaces\IJsonSerializer.cs" />
-    <Compile Include="Interfaces\ILogObserver.cs" />
-    <Compile Include="Interfaces\ISerializer.cs" />
-    <Compile Include="Interfaces\IStorageNamingService.cs" />
-    <Compile Include="Interfaces\IStorageService.cs" />
-    <Compile Include="Interfaces\IXmlSerializer.cs" />
-    <Compile Include="NetworkResponse.cs" />
-    <Compile Include="NetworkResponseStatus.cs" />
-    <Compile Include="Args\SecondViewSavedSateArgs.cs" />
-    <Compile Include="Args\SecondViewArgs.cs" />
+    <Compile Include="ActivityReporting\ActivityReportingService.cs" />
+    <Compile Include="Communication\CommunicationService.cs" />
+    <Compile Include="Communication\Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StorageFile.cs" />
-    <Compile Include="StorageFolder.cs" />
+    <Compile Include="Serializers\JsonSerializer.cs" />
+    <Compile Include="Serializers\XmlSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.2\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,10 +5,18 @@
     using System.Windows.Input;
     using Cirrious.MvvmCross.ViewModels;
     using Common;
+    using Common.Args;
+    using Common.Interfaces;
 
     public class SecondViewModel : MvxViewModel
     {
         private string updateString;
+
+        public SecondViewModel(IFluffyCommunicationService communicationService)
+        {
+            
+        }
+
 
         public string UpdateString
         {

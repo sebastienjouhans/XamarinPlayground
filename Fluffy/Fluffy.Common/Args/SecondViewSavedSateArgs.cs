@@ -1,4 +1,4 @@
-﻿namespace Fluffy.Common
+﻿namespace Fluffy.Common.Args
 {
     public class SecondViewSavedSateArgs
     {
