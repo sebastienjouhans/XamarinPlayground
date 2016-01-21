@@ -49,12 +49,12 @@ namespace Fluffy.Services.Communication
         /// <summary>
         /// The activity reporting service.
         /// </summary>
-        private readonly IActivityReportingService activityReportingService;
+        protected readonly IActivityReportingService activityReportingService;
 
         /// <summary>
         /// The JSON serializer.
         /// </summary>
-        private readonly IJsonSerializer jsonSerializer;
+        protected readonly IJsonSerializer jsonSerializer;
 
         /// <summary>
         /// The HTTP client.
@@ -129,7 +129,7 @@ namespace Fluffy.Services.Communication
         /// <param name="serializer">The serializer.</param>
         /// <param name="showActivity">if set to <c>true</c> show activity.</param>
         /// <returns>The task returning the network response.</returns>
-        private async Task<NetworkResponse<TResponse>> GetNetworkResponseAsync<TResponse>(
+        protected async Task<NetworkResponse<TResponse>> GetNetworkResponseAsync<TResponse>(
             Uri requestUri,
             HttpRequestMessage request,
             ISerializer serializer,
@@ -202,7 +202,7 @@ namespace Fluffy.Services.Communication
         /// <param name="request">The request.</param>
         /// <param name="showActivity">if set to <c>true</c> show activity.</param>
         /// <returns>The task returning the network response.</returns>
-        private async Task<NetworkResponse> GetNetworkResponseAsync(
+        protected async Task<NetworkResponse> GetNetworkResponseAsync(
             Uri requestUri,
             HttpRequestMessage request,
             bool showActivity)
@@ -239,7 +239,7 @@ namespace Fluffy.Services.Communication
         /// <typeparam name="T">The type of the response</typeparam>
         /// <param name="response">The response.</param>
         /// <returns>The successful network response with the specified result.</returns>
-        private NetworkResponse<T> GetSuccessfulNetworkResponse<T>(T response) where T : class
+        protected NetworkResponse<T> GetSuccessfulNetworkResponse<T>(T response) where T : class
         {
             return new NetworkResponse<T>(true, HttpStatusCode.OK, NetworkResponseStatus.Success, "OK", response);
         }
@@ -250,7 +250,7 @@ namespace Fluffy.Services.Communication
         /// <param name="requestUri">The request URI.</param>
         /// <param name="showActivity">if set to <c>true</c> show activity.</param>
         /// <returns>The activity ID.</returns>
-        private long RegisterActivity(Uri requestUri, bool showActivity)
+        protected long RegisterActivity(Uri requestUri, bool showActivity)
         {
             lock (this.requestIdLock)
             {
@@ -275,7 +275,7 @@ namespace Fluffy.Services.Communication
         /// <param name="activityId">The activity ID.</param>
         /// <param name="showActivity">if set to <c>true</c> show activity.</param>
         /// <param name="statusCode">The HTTP status code.</param>
-        private void UnregisterActivity(long activityId, bool showActivity, string statusCode)
+        protected void UnregisterActivity(long activityId, bool showActivity, string statusCode)
         {
             //Logger.Current.LogInformation(
             //    string.Format("Network request {0} completed with status code {1}", activityId, statusCode));

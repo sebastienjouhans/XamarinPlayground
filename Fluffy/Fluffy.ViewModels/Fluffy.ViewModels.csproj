@@ -61,6 +61,10 @@
       <Project>{84e6f609-555b-4379-a9c0-03bcbe5d8540}</Project>
       <Name>Fluffy.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Fluffy.Services\Fluffy.Services.csproj">
+      <Project>{a671a623-79bb-4735-a103-44fe26376eba}</Project>
+      <Name>Fluffy.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

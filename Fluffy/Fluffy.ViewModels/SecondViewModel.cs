@@ -10,11 +10,12 @@
 
     public class SecondViewModel : MvxViewModel
     {
+        private readonly IFluffyCommunicationService communicationService;
         private string updateString;
 
         public SecondViewModel(IFluffyCommunicationService communicationService)
         {
-            
+            this.communicationService = communicationService;
         }
 
 
@@ -46,9 +47,13 @@
             this.UpdateString = s;
         }
 
-        public override void Start()
+        public override async void Start()
         {
-            // do any start
+            var data = await this.communicationService.GetDataAsync().ConfigureAwait(false);
+            if (data.IsSuccessful && data.Response !=null)
+            {
+                var u = data.Response.Users;
+            }
         }
 
         public SecondViewSavedSateArgs SaveState()

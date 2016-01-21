@@ -13,6 +13,6 @@ namespace Fluffy.Common.Interfaces
         /// Consumes the specified log entry.
         /// </summary>
         /// <param name="logEntry">The log entry.</param>
-        void ConsumeEntry(LogEntry logEntry);
+       // void ConsumeEntry(LogEntry logEntry);
     }
 }

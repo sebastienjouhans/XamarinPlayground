@@ -4,6 +4,8 @@
     using Cirrious.CrossCore.IoC;
     using Cirrious.MvvmCross.ViewModels;
     using Common.Interfaces;
+    using Services.ActivityReporting;
+    using Services.Communication;
     using Services.Serializers;
     using ViewModels;
 
@@ -21,7 +23,8 @@
         private void InitialiseServices()
         {
             Mvx.RegisterType<IJsonSerializer, JsonSerializer>();
-            Mvx.RegisterType<ICommunicationService, IFluffyCommunicationService>();
+            Mvx.RegisterType<IActivityReportingService, ActivityReportingService>();
+            Mvx.RegisterType<IFluffyCommunicationService, FluffyCommunicationService>();
         }
 
     }
