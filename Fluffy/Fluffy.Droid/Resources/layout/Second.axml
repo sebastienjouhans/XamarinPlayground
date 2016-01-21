@@ -9,4 +9,14 @@
         android:layout_height="wrap_content"
         android:textSize="24dp"
         local:MvxBind="Text UpdateString" />
+    <Mvx.MvxListView
+        android:id="@+id/TradeConfirmation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="ItemsSource Users;ItemClick UserItemClickCommand" />
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        local:MvxBind="Visibility IsLoading, Converter=Visibility" />
 </LinearLayout>

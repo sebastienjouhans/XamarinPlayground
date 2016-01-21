@@ -90,6 +90,9 @@ namespace Fluffy.Droid
 			// aapt resource value: 0x7f040002
 			public const int Navigate = 2130968578;
 			
+			// aapt resource value: 0x7f040003
+			public const int TradeConfirmation = 2130968579;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -107,10 +110,13 @@ namespace Fluffy.Droid
 			public const int Main = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Page2 = 2130903041;
+			public const int seb_item_listview = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int SplashScreen = 2130903042;
+			public const int Second = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int SplashScreen = 2130903043;
 			
 			static Layout()
 			{
