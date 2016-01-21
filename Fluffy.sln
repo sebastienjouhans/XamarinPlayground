@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluffy.WinPhone", "Fluffy\F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluffy.ViewModels", "Fluffy\Fluffy.ViewModels\Fluffy.ViewModels.csproj", "{86156C8B-BEA3-4A4E-9CD9-07319B4921D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluffy.Common", "Fluffy.Common\Fluffy.Common.csproj", "{84E6F609-555B-4379-A9C0-03BCBE5D8540}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluffy.Common", "Fluffy\Fluffy.Common\Fluffy.Common.csproj", "{84E6F609-555B-4379-A9C0-03BCBE5D8540}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

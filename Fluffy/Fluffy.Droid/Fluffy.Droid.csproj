@@ -104,7 +104,7 @@
     <AndroidResource Include="Resources\values\MvxBindingAttributes.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Fluffy.Common\Fluffy.Common.csproj">
+    <ProjectReference Include="..\Fluffy.Common\Fluffy.Common.csproj">
       <Project>{84e6f609-555b-4379-a9c0-03bcbe5d8540}</Project>
       <Name>Fluffy.Common</Name>
     </ProjectReference>
