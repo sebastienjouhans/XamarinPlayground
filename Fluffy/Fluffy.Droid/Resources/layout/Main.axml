@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Button
+        android:id="@+id/MyButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CLick here"
+        local:MvxBind="Click ItemClickCommand" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        local:MvxBind="Text UpdateString" />
+    <Button
+        android:id="@+id/Navigate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigate"
+        local:MvxBind="Click NavigateClickCommand, CommandParameter=bar" />
+</LinearLayout>
