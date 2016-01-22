@@ -13,4 +13,5 @@ At the time of mvvmcross nuget package had a bug and did not add the MvxBindingA
   * comm service
   * list view with click command
   * custom list view items
-  * progress bar with visibilty converter (mvvmcross visibility plugin)
+  * progress bar with visibilty converter (using mvvmcross visibility plugin)
+  * image loading in the item list view (using mvvmcross file and download cache plugin)
