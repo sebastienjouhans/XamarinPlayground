@@ -1,13 +1,11 @@
-﻿namespace Fluffy.Core
+﻿namespace Fluffy.ViewModels
 {
     using Cirrious.CrossCore;
-    using Cirrious.CrossCore.IoC;
     using Cirrious.MvvmCross.ViewModels;
     using Common.Interfaces;
     using Services.ActivityReporting;
     using Services.Communication;
     using Services.Serializers;
-    using ViewModels;
 
     public class App : MvxApplication
     {
@@ -17,7 +15,7 @@
 
             this.InitialiseServices();
 
-            Mvx.RegisterSingleton(new CustomAppStart());
+           this.RegisterAppStart(new CustomAppStart());
         }
 
         private void InitialiseServices()
@@ -42,7 +40,7 @@
         {
             if (this.service)
             {
-                this.ShowViewModel<SecondViewModel>();
+                this.ShowViewModel<MainViewModel>();
             }
             else
             {

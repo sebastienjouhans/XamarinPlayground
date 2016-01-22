@@ -17,5 +17,5 @@
         android:layout_height="80dp"
         android:padding="8dp"
         android:src="@drawable/icon"
-        local:MvxBind="ImageUrl ThumbImage" />
+        local:MvxBind="HttpImageUrl ThumbImage" />
 </LinearLayout>
