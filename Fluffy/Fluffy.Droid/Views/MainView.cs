@@ -7,11 +7,7 @@
     using ViewModels;
 
     [Activity(
-        Label = "Fluffy", 
-        MainLauncher = true, 
-        Icon = "@drawable/icon", 
-        NoHistory = true, 
-        ScreenOrientation = ScreenOrientation.Portrait)]
+        Label = "Fluffy")]
     public class MainView : MvxActivity
     {
         public new MainViewModel ViewModel

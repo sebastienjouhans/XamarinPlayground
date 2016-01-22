@@ -24,21 +24,20 @@
             Mvx.RegisterType<IActivityReportingService, ActivityReportingService>();
             Mvx.RegisterType<IFluffyCommunicationService, FluffyCommunicationService>();
         }
-
     }
 
     public class CustomAppStart : MvxNavigatingObject, IMvxAppStart
     {
-        private readonly bool service;
+        private readonly bool showFirstScreen;
 
         public CustomAppStart()
         {
-            this.service = false;
+            this.showFirstScreen = true;
         }
 
         public void Start(object hint = null)
         {
-            if (this.service)
+            if (this.showFirstScreen)
             {
                 this.ShowViewModel<MainViewModel>();
             }
