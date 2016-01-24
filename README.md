@@ -16,3 +16,5 @@ At the time of mvvmcross nuget package had a bug and did not add the MvxBindingA
   * progress bar with visibilty converter (using mvvmcross visibility plugin)
   * image loading in the item list view (using mvvmcross file and download cache plugin)
   * splash screen and custom start
+
+##`iPhone`
