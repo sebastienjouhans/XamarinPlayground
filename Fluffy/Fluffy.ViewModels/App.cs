@@ -15,7 +15,7 @@
 
             this.InitialiseServices();
 
-           this.RegisterAppStart(new CustomAppStart());
+            this.RegisterAppStart(new CustomAppStart());
         }
 
         private void InitialiseServices()

@@ -1,0 +1,45 @@
+// WARNING
+//
+// This file has been generated automatically by Xamarin Studio from the outlets and
+// actions declared in your storyboard file.
+// Manual changes to this file will not be maintained.
+//
+using Foundation;
+using System;
+using System.CodeDom.Compiler;
+using UIKit;
+
+namespace Fluffy.iPhone.Views
+{
+	[Register ("MainView")]
+	partial class MainView
+	{
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel FeedbackText { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton MyButton { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton Navigate { get; set; }
+
+		void ReleaseDesignerOutlets ()
+		{
+			if (FeedbackText != null) {
+				FeedbackText.Dispose ();
+				FeedbackText = null;
+			}
+			if (MyButton != null) {
+				MyButton.Dispose ();
+				MyButton = null;
+			}
+			if (Navigate != null) {
+				Navigate.Dispose ();
+				Navigate = null;
+			}
+		}
+	}
+}
