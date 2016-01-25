@@ -18,3 +18,7 @@ At the time of development, mvvmcross nuget package had a bug and did not add th
   * splash screen and custom start
 
 ##`iPhone`
+* mvvmcross implementation
+  * simple button click bind to a command in the viewmodel
+  * viewmodle updating the view
+  * viewmodel navigation with parameters
