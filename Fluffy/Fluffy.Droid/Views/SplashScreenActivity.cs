@@ -16,5 +16,11 @@
         public SplashScreenActivity() : base(Resource.Layout.SplashScreen)
         {
         }
+        
+        // Add this to get support for the back button
+        protected override void OnViewModelSet()
+        {
+            // ignored
+        }
     }
 }
