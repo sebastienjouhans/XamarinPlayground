@@ -29,6 +29,7 @@ namespace Fluffy.iPhone.Views
             bindings.Bind(dataSource).To(vm => vm.Users);
             bindings.Bind(dataSource).For(s => s.SelectionChangedCommand).To(vm => vm.UserItemClickCommand).Apply();
             bindings.Bind(this.InitVariables).To(vm => vm.UpdateString);
+            bindings.Bind(this.ActivityIndicator).For("Visibility").To(vm => vm.IsLoading).WithConversion("Visibility");
             bindings.Apply();
 
             this.TableView.Source = dataSource;

@@ -16,6 +16,10 @@ namespace Fluffy.iPhone.Views
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIActivityIndicatorView ActivityIndicator { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel InitVariables { get; set; }
 
 		[Outlet]
@@ -24,6 +28,10 @@ namespace Fluffy.iPhone.Views
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (ActivityIndicator != null) {
+				ActivityIndicator.Dispose ();
+				ActivityIndicator = null;
+			}
 			if (InitVariables != null) {
 				InitVariables.Dispose ();
 				InitVariables = null;
