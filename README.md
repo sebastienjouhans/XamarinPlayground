@@ -22,5 +22,5 @@ At the time of development, mvvmcross nuget package had a bug and did not add th
 * simple button click bind to a command in the viewmodel
 * viewmodle updating the view
 * viewmodel navigation with parameters
-* list view with click command
-* custom list view items
+* table view with click command
+* custom table view cells
