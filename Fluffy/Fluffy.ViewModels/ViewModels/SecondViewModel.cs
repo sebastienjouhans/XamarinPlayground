@@ -61,6 +61,15 @@
             }
         }
 
+        public ICommand UserItemClickCommand
+        {
+            get
+            {
+                this.userItemClickCommand = this.userItemClickCommand ?? new MvxCommand<User>(this.UserItemClick);
+                return this.userItemClickCommand;
+            }
+        }
+
         public void Init(SecondViewArgs viewArgs)
         {
             var s = $@"view init  -  First={viewArgs.First}, Second={viewArgs.Second}, Answer={viewArgs.Answer}";

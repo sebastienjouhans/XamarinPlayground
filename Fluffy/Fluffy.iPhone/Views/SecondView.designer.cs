@@ -18,11 +18,19 @@ namespace Fluffy.iPhone.Views
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel InitVariables { get; set; }
 
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UITableView TableView { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (InitVariables != null) {
 				InitVariables.Dispose ();
 				InitVariables = null;
+			}
+			if (TableView != null) {
+				TableView.Dispose ();
+				TableView = null;
 			}
 		}
 	}
