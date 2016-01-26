@@ -24,3 +24,5 @@ At the time of development, mvvmcross nuget package had a bug and did not add th
 * viewmodel navigation with parameters
 * table view with click command
 * custom table view cells
+* image loading in the table view cells (using mvvmcross file and download cache plugin)
+* added activity indicator with visibilty converter (using mvvmcross visibility plugin)
